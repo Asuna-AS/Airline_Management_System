@@ -2,9 +2,13 @@
 Airline management system we have developed is a solution to business and financial problems in one platform. Accessibility, ease of use and light resource dependency were the main issues of focus that were undertaken during the entire design phase of our project. The Graphical User Interface is extremely user friendly and the users can easily navigate through the platform to access its different features. The system is designed and built in such a way that it can be used to manage the airline bookings/ cancellations and can be handled by any end user scenario, that is, by customers or admins.
 
 # JAVA properties that were used
+
 1.) Java awt.swing; package - for the user interface
+
 2.) JDBC - linker to database
+
 3.) SQL database software to manage data
+
 4.) Java object oriented methodology (inheritance, abstraction, encapsulation)
 
 # Real world applications of our project
@@ -15,6 +19,7 @@ This project has been very helpful to each one of us to learn teamwork and make 
 We learned many new concepts and their application through this project. We learned a new aspect of java programming which is UI designing by using Swing and database management through JDBC.
 
 # Contributors
+
 1.) Anukool 
 
 2.) Arunim Singhal
