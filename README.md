@@ -16,8 +16,12 @@ We learned many new concepts and their application through this project. We lear
 
 # Contributors
 1.) Anukool 
+
 2.) Arunim Singhal
+
 3.) Karthik Nayak
+
 4.) Naveed Bhat
+
 5.) Sahil Rathi
 
