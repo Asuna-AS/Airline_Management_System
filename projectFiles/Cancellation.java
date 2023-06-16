@@ -77,8 +77,8 @@ public class Cancellation extends Frame implements ActionListener {
 
                 if (ae.getSource() == b1) {
                         try {
-                                Class.forName("com.mysql.jdbc.Driver");
-                                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/airdb", "root", "");
+                                Class.forName("com.mysql.cj.jdbc.Driver");
+                                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/flightdetails?autoReconnect=true&useSSL=false", "root", "Aks@2512");
 
                                 ps = con.prepareStatement(
                                                 "select FlightNo,TravelDate,Class from Passengers where FName=?");

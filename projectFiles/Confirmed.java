@@ -13,8 +13,8 @@ public class Confirmed extends Frame {
 		table.setBackground(Color.WHITE);
 		table.setBounds(23, 250, 800, 300);
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/airdb", "root", "");
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/flightdetails?autoReconnect=true&useSSL=false", "root", "Aks@2512");
 			String sql = "SELECT * from Passengers";
 			table.setBackground(Color.WHITE);
 			table.setBounds(23, 250, 800, 300);

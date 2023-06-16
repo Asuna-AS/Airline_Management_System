@@ -67,26 +67,22 @@ public class MainMenu extends Frame implements ActionListener {
 			wr.setTitle("Waiting List");
 
 		}
-
 		if (ae.getSource() == m2_3) {
 			Collection dcr = new Collection();
 			dcr.setSize(400, 400);
 			dcr.setVisible(true);
 			dcr.setTitle("Daily Collection Report");
-
 		}
 		if (ae.getSource() == m3_1) {
 			System.exit(0);
 
 		}
-
 	}
 
 	class M extends WindowAdapter {
 		public void windowClosing(WindowEvent e) {
 			setVisible(false);
 			dispose();
-
 		}
 	}
 

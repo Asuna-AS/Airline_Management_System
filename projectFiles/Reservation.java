@@ -86,7 +86,6 @@ public class Reservation extends Frame implements ActionListener {
 		public void windowClosing(WindowEvent e) {
 			setVisible(false);
 			dispose();
-
 		}
 	}
 }

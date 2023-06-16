@@ -169,8 +169,8 @@ public class Check extends Frame implements ActionListener {
 		if (ae.getSource() == b1) {
 
 			try {
-				Class.forName("com.mysql.jdbc.Driver");
-				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/airdb", "root", "");
+				Class.forName("com.mysql.cj.jdbc.Driver");
+				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/flightdetails?autoReconnect=true&useSSL=false", "root", "Aks@2512");
 				ps = con.prepareStatement("Select * from Reservation where TravelDate=? and FlightNo=?");
 				ps.setString(1, t1.getText());
 				ps.setString(2, t2.getText());

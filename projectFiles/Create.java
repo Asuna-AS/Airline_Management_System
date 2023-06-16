@@ -218,10 +218,10 @@ public class Create extends Frame implements ActionListener {
 	public void actionPerformed(ActionEvent ae) {
 		if (ae.getSource() == b1) {
 			try {
-				Class.forName("com.mysql.jdbc.Driver");
-				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/airdb", "root", "");
+				Class.forName("com.mysql.cj.jdbc.Driver");
+				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/flightdetails?autoReconnect=true&useSSL=false", "root", "Aks@2512");
 				ps = con.prepareStatement(
-						"insert into Passengers(FlightNo,TravelDate,FName,LName,Age,Gender,Address,Phone,Class)values(?,?,?,?,?,?,?,?,?)");
+						"insert into Passenger(FlightNo,TravelDate,FName,LName,Age,Gender,Address,Phone,Class)values(?,?,?,?,?,?,?,?,?)");
 
 				String age = t4.getText();
 				ps.setString(1, t10.getText());
